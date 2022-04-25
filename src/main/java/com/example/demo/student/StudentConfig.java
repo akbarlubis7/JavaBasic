@@ -14,24 +14,24 @@ import static java.util.Calendar.OCTOBER;
 @Configuration
 public class StudentConfig {
 
-    @Bean
-    CommandLineRunner commandLineRunner(StudentRepository repository) {
-        return args -> {
-            Student akbar = new Student(
-                    "Akbar",
-                    LocalDate.of(1994, 10, 7),
-                    "akbaryahputralubis@gmail.com"
-            );
-
-            Student hani = new Student(
-                    "Hani",
-                    LocalDate.of(1995, 11, 10),
-                    "hani@gmail.com"
-            );
-
-            repository.saveAll(
-                    List.of(akbar, hani)
-            );
-        };
-    }
+//    @Bean
+//    CommandLineRunner commandLineRunner(StudentRepository repository) {
+//        return args -> {
+//            Student akbar = new Student(
+//                    "Akbar",
+//                    LocalDate.of(1994, 10, 7),
+//                    "akbaryahputralubis@gmail.com"
+//            );
+//
+//            Student hani = new Student(
+//                    "Hani",
+//                    LocalDate.of(1995, 11, 10),
+//                    "hani@gmail.com"
+//            );
+//
+//            repository.saveAll(
+//                    List.of(akbar, hani)
+//            );
+//        };
+//    }
 }
